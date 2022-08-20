@@ -691,6 +691,30 @@ class Board extends React.Component {
 
 **[View the full code at this point](https://codepen.io/gaearon/pen/KmmrBy?editors=0010)**
 
+### Preventing Overwrite
+
+We have another obvious defect in our tic-tac-toe game: "X"s and "O"s can be overwritten.
+
+We simply need to prevent the setting of a square if that square has be clicked previously:
+
+```javascript
+  handleClick(i) {
+    const squares = this.state.squares.slice();
+    if (!!squares[i]) {
+        return;
+    }
+    squares[i] = this.state.xIsNext ? 'X' : 'O';
+    this.setState({
+      squares: squares,
+      xIsNext: !this.state.xIsNext,
+    });
+  }
+```
+
+The double negation in the if condition, `(!!squares[i])`, returns true if the value of `squares[i]` is truthy. So we will take no action unless the value is `null`. For this example it is enough to state that `null` is falsy, and `X` or `O` are truthy; but if you'd like to learn more about thruthiness, you can do so by reading the [Truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy) entry in MDN's glossary.
+
+**[View the full code at this point](https://codepen.io/jamesobrooks/pen/mdxvzWo?editors=0010)**
+
 ### Declaring a Winner {#declaring-a-winner}
 
 Now that we show which player's turn is next, we should also show when the game is won and there are no more turns to make. Copy this helper function and paste it at the end of the file:
