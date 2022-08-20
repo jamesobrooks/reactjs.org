@@ -700,7 +700,7 @@ We simply need to prevent the setting of a square if that square has be clicked 
 ```javascript
   handleClick(i) {
     const squares = this.state.squares.slice();
-    if (!!squares[i]) {
+    if (squares[i]) {
         return;
     }
     squares[i] = this.state.xIsNext ? 'X' : 'O';
@@ -711,7 +711,7 @@ We simply need to prevent the setting of a square if that square has be clicked 
   }
 ```
 
-The double negation in the if condition, `(!!squares[i])`, returns true if the value of `squares[i]` is truthy. So we will take no action unless the value is `null`. For this example it is enough to state that `null` is falsy, and `X` or `O` are truthy; but if you'd like to learn more about thruthiness, you can do so by reading the [Truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy) entry in MDN's glossary.
+The if condition, `(squares[i])`, returns true if the value of `squares[i]` is truthy. So we will take no action unless the value is `null`. For this example it is enough to state that `null` is falsy, and `X` or `O` are truthy; but if you'd like to learn more about thruthiness, you can do so by reading the [Truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy) entry in MDN's glossary.
 
 **[View the full code at this point](https://codepen.io/jamesobrooks/pen/mdxvzWo?editors=0010)**
 
