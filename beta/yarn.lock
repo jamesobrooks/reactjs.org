@@ -4034,13 +4034,10 @@ react-devtools-inline@4.22.1:
     source-map-js "^0.6.2"
     sourcemap-codec "^1.4.8"
 
-react-dom@0.0.0-experimental-82c64e1a4-20220520:
-  version "0.0.0-experimental-82c64e1a4-20220520"
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-0.0.0-experimental-82c64e1a4-20220520.tgz#dff45fa158d2a1ebb43310656707999fc2e80525"
-  integrity sha512-mZ4CUpv8fahsgEUTBkue2KbFqje9g3gW/a+oupwoZogl7VJ9vjhQIAEqCb6O7LeC9ivh+oU4wyO9Vf3a0qDZIQ==
-  dependencies:
-    loose-envify "^1.1.0"
-    scheduler "0.0.0-experimental-82c64e1a4-20220520"
+react-dom@0.14.10:
+  version "0.14.10"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-0.14.10.tgz#da883daef7fa86838e9e2fcfcc084c590c350e21"
+  integrity sha512-kDs8SWFb8Sry4NAplhpJbZEeAnTPir/m+s9s+lkdqA2a89BzmWGnEgGG/CfmhULjv1ogc4oHrjMfAvFNruT3jQ==
 
 react-is@^16.13.1:
   version "16.13.1"
@@ -4347,13 +4344,6 @@ safe-buffer@~5.1.1:
   version "5.1.2"
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.1.2.tgz#991ec69d296e0313747d59bdfd2b745c35f8828d"
   integrity sha512-Gd2UZBJDkXlY7GbJxfsE8/nvKkUEU1G38c1siN6QP6a9PT9MmHB8GnpscSmMJSoF8LOIrt8ud/wPtojys4G6+g==
-
-scheduler@0.0.0-experimental-82c64e1a4-20220520:
-  version "0.0.0-experimental-82c64e1a4-20220520"
-  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.0.0-experimental-82c64e1a4-20220520.tgz#614d4ba6b25c90880c7aba9b1f48fe692ec2b7a2"
-  integrity sha512-SaBlhVMRXy8m8PdfW26qMFLV50LqmdUU+g4J1utrOxaGI5nbQQmqPp8McNACC+dbff4snVdJmWGQVwiwGlzD0Q==
-  dependencies:
-    loose-envify "^1.1.0"
 
 scroll-into-view-if-needed@^2.2.25:
   version "2.2.28"
